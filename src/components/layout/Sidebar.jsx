@@ -1,9 +1,8 @@
 import React from 'react';
-import { VscFiles, VscSettingsGear } from 'react-icons/vsc';
+import { VscFiles, VscSettingsGear, VscAccount} from 'react-icons/vsc';
 import { BiGitBranch } from 'react-icons/bi';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import { SiCodeforces, SiCodechef, SiLeetcode } from 'react-icons/si';
-import { FaTrophy } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../../contexts/ThemeContext';
 
@@ -15,22 +14,22 @@ export default function Sidebar({ expanded, setExpanded }) {
     { 
       icon: <SiCodeforces />, 
       title: 'Codeforces', 
-      url: 'https://codeforces.com/profile/rohit221004' 
+      url: 'https://codeforces.com/profile/manirht_45' 
     },
     { 
       icon: <SiCodechef />, 
       title: 'CodeChef', 
-      url: 'https://www.codechef.com/users/rohit221004' 
+      url: 'https://www.codechef.com/users/manirht45' 
     },
     { 
       icon: <SiLeetcode />, 
       title: 'LeetCode', 
-      url: 'https://leetcode.com/rohit221004/' 
+      url: 'https://leetcode.com/u/manirht_45/' 
     },
     { 
-      icon: <FaTrophy />, 
+      icon: <img src="src\assets\logo_bk.svg" alt="AtCoder Logo" style={{ width: '1em', height: '1em' }} />,
       title: 'AtCoder', 
-      url: 'https://atcoder.jp/users/rohit221004' 
+      url: 'https://atcoder.jp/users/manirht_45' 
     },
   ];
 
@@ -45,7 +44,7 @@ export default function Sidebar({ expanded, setExpanded }) {
           <VscFiles />
         </div>
         <a
-          href="https://github.com/manirht/your-portfolio-repo"
+          href="https://github.com/manirht/my-portfolio"
           target="_blank"
           rel="noreferrer"
           className="sidebar-icon"
@@ -81,15 +80,17 @@ export default function Sidebar({ expanded, setExpanded }) {
           onClick={() => navigate('/contact')}
           title="Contact"
         >
-          <VscSettingsGear />
+          <VscAccount />
         </div>
-        <div 
+       <a
+          href="https://react.dev/learn" // Link to official React documentation
+          target="_blank"
+          rel="noreferrer"
           className="sidebar-icon"
-          onClick={() => navigate('/docs')}
-          title="Documentation"
+          title="React Documentation" // Updated title
         >
           <VscSettingsGear />
-        </div>
+        </a>
       </div>
     </div>
   );

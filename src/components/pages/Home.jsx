@@ -7,32 +7,23 @@ const links = [
   { icon: <FaGithub />, href: 'https://github.com/manirht', title: 'GitHub' },
   { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/manirohit/', title: 'LinkedIn' },
   { icon: <FaEnvelope />, href: 'mailto:manirohit221004@gmail.com', title: 'Email' },
-  { icon: <FaMedium />, href: 'https://medium.com/@rohit', title: 'Medium' },
-  { icon: <FaBlog />, href: 'https://rohit-blog.com', title: 'Blog' },
+  // { icon: <FaMedium />, href: 'https://medium.com/@rohit', title: 'Medium' },
+  // { icon: <FaBlog />, href: 'https://rohit-blog.com', title: 'Blog' },
 ];
 
 export default function Home() {
   const { darkMode } = useTheme();
-
+const profileImage = 'src/assets/dp.jpg';
   return (
     <div className="home-page">
       <div className="container">
         <div className="hero-content">
           <div className="logo-container">
-            <div className="logo-placeholder" style={{
-              width: '200px',
-              height: '200px',
-              borderRadius: '50%',
-              backgroundColor: darkMode ? '#333' : '#eee',
-              border: '5px solid var(--accent-primary)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: 'var(--accent-primary)',
-              fontWeight: 'bold'
-            }}>
-              RK
-            </div>
+            <img
+              src={profileImage} 
+              alt="Mani Rohit Profile"
+              className="logo" 
+            />
           </div>
           <div className="text-content">
             <h1>Mani Rohit</h1>

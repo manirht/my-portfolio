@@ -4,13 +4,13 @@ import { IoIosGitBranch } from 'react-icons/io';
 
 export default function Footer() {
   const handleBranchClick = () => {
-    window.open('https://github.com/manirht/your-portfolio-repo', '_blank');
+    window.open('https://github.com/manirht/my-portfolio', '_blank');
   };
 
   return (
     <footer className="footer">
       <div className="footer-left">
-        <div className="footer-item remote" onClick={handleBranchClick}>
+        <div className="footer-item remote">
           <VscRemote className="footer-icon" />
         </div>
         <div className="footer-item branch" onClick={handleBranchClick}>
