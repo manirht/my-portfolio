@@ -166,7 +166,7 @@ export default function Contact() {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="contact-form">
+          <div className="contact-form" >
             {/* Form Header */}
             <div className="form-header">
               <h3>Send me a message</h3>
