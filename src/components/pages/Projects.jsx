@@ -6,7 +6,7 @@ export default function Projects() {
       title: "RoadIntel",
       date: "July 2024",
       description: "Deep Learning Traffic Signs Classification",
-      technologies: ["Deep Learning", "OpenCV", "NumPy", "scikit", "matplotlib", "TensorFlow"],
+      technologies: ["Deep Learning,", " OpenCV,", " NumPy,", " scikit,", " matplotlib,", " TensorFlow"],
       achievements: [
         "Developed and fine-tuned a deep learning CV model for real-time traffic signs classification, achieving a 25% reduction in misclassification errors",
         "Attained a 98% accuracy rate, boosting traffic management efficiency by 40%",
@@ -17,7 +17,7 @@ export default function Projects() {
       title: "ChatterBox",
       date: "April 2024",
       description: "Stay in sync. Speak in real time",
-      technologies: ["Socket.IO", "NodeJS", "ExpressJS", "JavaScript", "MongoDB", "ReactJS"],
+      technologies: ["Socket.IO,", " NodeJS,", " ExpressJS,", " JavaScript,", " MongoDB,", " ReactJS"],
       achievements: [
         "Collaborated with a 2-person team to design and develop a full-stack chat platform enabling seamless real-time communication",
         "Designed and deployed RESTful APIs for user authentication, message handling, and chatroom management"
@@ -27,7 +27,7 @@ export default function Projects() {
       title: "Journey Quest",
       date: "December 2023",
       description: "Book. Explore. Repeat",
-      technologies: ["JavaScript", "ReactJS", "NodeJS", "ExpressJS", "MongoDB"],
+      technologies: ["JavaScript,", " ReactJS,", " NodeJS,", " ExpressJS,", " MongoDB"],
       achievements: [
         "Built and scaled a full-stack tour booking platform with end-to-end RESTful integration",
         "Architected and deployed RESTful APIs to fetch, filter, and manage tour packages"

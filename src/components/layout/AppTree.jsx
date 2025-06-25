@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaFolder, FaFolderOpen, FaFileCode } from 'react-icons/fa';
+import { FaFolder, FaFolderOpen, FaFileCode , FaMarkdown} from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 export default function AppTree({
@@ -52,7 +52,7 @@ export default function AppTree({
               className={`tree-item ${selectedIndex === page.index ? 'active' : ''}`}
               onClick={() => handlePageClick(page)}
             >
-              <FaFileCode className="file-icon" />
+              <FaMarkdown className="file-icon" />
               <span>{page.name}</span>
             </div>
           ))}
