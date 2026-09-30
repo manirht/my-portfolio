@@ -17,7 +17,8 @@ export default function Skills() {
       title: "Web Technologies & Frameworks",
       items: [
         "React.js", "Next.js", "Node.js", "Express.js",
-        "Socket.io", "MongoDB", "MySQL", "GitHub", "Flask"
+        "Socket.io", "Spring Boot", "MongoDB", "MySQL", "Elasticsearch",
+        "AWS S3", "OpenFeign", "MCP", "GitHub", "Flask"
       ]
     },
     {

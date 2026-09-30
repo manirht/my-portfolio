@@ -6,7 +6,7 @@ export default function Education() {
       institution: "Indian Institute of Information Technology, Lucknow",
       degree: "Bachelor of Technology in Computer Science",
       period: "November 2022 - June 2026",
-      gpa: "GPA: 8.32/10",
+      gpa: "GPA: 8.54/10",
       description: "My journey at IIIT Lucknow is where I'm deeply exploring the core principles of computer science, transforming complex theoretical knowledge into practical, impactful solutions. This program is shaping me into a versatile developer and a meticulous problem-solver, ready to tackle the challenges of the digital world.",
       coursework: [
         "Object-Oriented Programming",

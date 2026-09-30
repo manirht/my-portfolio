@@ -3,34 +3,36 @@ import React from 'react';
 export default function Projects() {
   const projects = [
     {
-      title: "RoadIntel",
-      date: "July 2024",
-      description: "Deep Learning Traffic Signs Classification",
-      technologies: ["Deep Learning,", " OpenCV,", " NumPy,", " scikit,", " matplotlib,", " TensorFlow"],
+      title: "DistriKV",
+      date: "2026",
+      description: "A distributed, crash-safe key-value store built from scratch",
+      technologies: ["Java,", " gRPC,", " Raft (hand-written),", " Gradle"],
       achievements: [
-        "Developed and fine-tuned a deep learning CV model for real-time traffic signs classification, achieving a 25% reduction in misclassification errors",
-        "Attained a 98% accuracy rate, boosting traffic management efficiency by 40%",
-        "Processed and classified over 500,000 real-world traffic signal images"
+        "Built a distributed KV store bottom-up: append-only local storage engine, gRPC layer, and a hand-written Raft consensus protocol — no Raft library, no embedded storage engine",
+        "Added compaction, TTL, and chaos testing; 100,000 acknowledged writes survived a SIGKILL crash test with byte-for-byte recovery",
+        "Benchmarked ~460,000 writes/sec under relaxed durability, with a 1GB / 1M-key store reopening in 420ms from a warm cache"
       ]
     },
     {
-      title: "ChatterBox",
-      date: "April 2024",
-      description: "Stay in sync. Speak in real time",
-      technologies: ["Socket.IO,", " NodeJS,", " ExpressJS,", " JavaScript,", " MongoDB,", " ReactJS"],
+      title: "IC Engine RAG System",
+      date: "2026",
+      description: "High-accuracy RAG system for answering questions over technical PDFs",
+      technologies: ["Python,", " FAISS,", " sentence-transformers,", " Groq (Llama 3.3 70B)"],
       achievements: [
-        "Collaborated with a 2-person team to design and develop a full-stack chat platform enabling seamless real-time communication",
-        "Designed and deployed RESTful APIs for user authentication, message handling, and chatroom management"
+        "Built a retrieval-augmented generation pipeline over Internal Combustion Engine documentation using semantic chunking, local embeddings, and a FAISS vector store",
+        "Added a cross-encoder reranking stage to improve retrieval accuracy before passing context to the LLM",
+        "Implemented an automated LLM-as-judge evaluation loop to score generated answers against ground truth with reasoning"
       ]
     },
     {
-      title: "Journey Quest",
-      date: "December 2023",
-      description: "Book. Explore. Repeat",
-      technologies: ["JavaScript,", " ReactJS,", " NodeJS,", " ExpressJS,", " MongoDB"],
+      title: "RBAC Policy Engine",
+      date: "2025",
+      description: "AI-powered RBAC policy engine with a natural-language interface",
+      technologies: ["Python,", " FastAPI,", " Streamlit,", " Claude API"],
       achievements: [
-        "Built and scaled a full-stack tour booking platform with end-to-end RESTful integration",
-        "Architected and deployed RESTful APIs to fetch, filter, and manage tour packages"
+        "Built a conversational interface for defining role-based access control policies in plain English, with real-time policy preview as it's built",
+        "Implemented multi-layer validation against available roles/resources/permissions and contextual conditions (environment, time, MFA status)",
+        "Added clarifying-question handling for ambiguous instructions and a policy evaluation/testing mode against simulated access requests, backed by 63 passing tests"
       ]
     }
   ];

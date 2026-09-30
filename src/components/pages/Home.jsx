@@ -31,15 +31,15 @@ export default function Home() {
       <div className="container">
         <div className="hero-content">
           <div className="logo-container">
-            <img src={profileImage} alt="Mani Rohit Profile" className="logo" />
+            <img src={profileImage} alt="Mani Rohit Chennakesavula Profile" className="logo" />
           </div>
           <div className="text-content">
-            <h1>Mani Rohit</h1>
-            <h2>Full Stack Developer & Competitive Programmer</h2>
+            <h1>Mani Rohit Chennakesavula</h1>
+            <h2>Software Engineer</h2>
             <p>
-              I build robust web applications and solve complex algorithmic
-              problems. Currently pursuing my Bachelor's in Computer Science at
-              IIIT Lucknow with a passion for creating efficient solutions.
+              Software Engineering Intern at Tekion Corp focused on building
+              high-scale backend systems and practical developer tools. I enjoy
+              turning complex problems into reliable, efficient solutions.
             </p>
             <div className="social-links">
               {links.map((link, index) => (
